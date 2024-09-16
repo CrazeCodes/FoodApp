@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Page</title>
+</head>
+<body>
+    <div class="container">
+      <img [src]="food.imageUrl" [alt]="food.name"/>
+       
+        <div class="details">
+          <div class="header">
+            <span class="name">
+              {{food.name}}
+            </span>
+            <span class="favorite">❤</span>
+          </div> 
+       
+          <div class="origins">
+            <span *ngFor="let origin of food.origins">
+              {{origin}}
+            </span>
+          </div>
+      
+          <div class="tags">
+            <a *ngFor="let tag of food.tags" routerLink="/tag/{{tag}}">
+              {{tag}}
+            </a>
+          </div> 
+      
+          <div class="cook-time">
+            <span>
+              Time to cook about <strong>{{food.cookTime}}</strong> minutes
+            </span>
+          </div> 
+      
+          <div class="price">
+            <span>
+              ₹
+              {{food.price}}
+            </span>
+          </div> 
+      <button>Add To Cart</button> 
+        </div>
+    </div>
+</body>
+</html>

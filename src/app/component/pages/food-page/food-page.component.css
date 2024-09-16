@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #BDC3C7, #2C3E50) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0.1, 0.2);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container img {
+    width: 50%;
+    height: center;
+    object-fit: cover;
+}
+
+.details {
+    padding: 20px;
+    width: 50%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.favorite {
+
+    border: #34495E;
+    font-size: 22px;
+    color: #ff0000;
+    cursor: pointer;
+    
+}
+
+.favorite.not {
+    color: #ccc;
+}
+
+.origins, .cook-time, .price {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.tags {
+    margin-bottom: 15px;
+}
+
+.tags a {
+    font-size: 12px;
+    color: #00aaff;
+    margin-right: 5px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+
+.tags a:hover {
+    background-color: #00aaff;
+    color: #fff;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #34495E;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff4500;
+}

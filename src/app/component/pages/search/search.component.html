@@ -1,0 +1,15 @@
+
+  <div class="image-container">
+    <img class="d-block w-100" src="assets/pizza.jpg" alt="Main Image">
+    <div class="search-bar-container">
+      <input 
+        #s 
+        type="search" 
+        placeholder="Search..." 
+        (keyup.enter)="search(s.value)" 
+        [value]="searchTerm"
+      />
+      <button (click)="search(s.value)">Search</button>
+    </div>
+  </div>
+  
